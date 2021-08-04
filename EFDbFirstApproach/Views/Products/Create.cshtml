@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Create</h2>
+
+<form action="/products/create" method="post">
+   
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <lable>Product Name</lable>
+                <input type="text" class="form-control" id="ProductName" name="ProductName" placeholder="Product Name" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <lable>Product Price</lable>
+                <input type="number" class="form-control" id="Price" name="Price" placeholder="Product Price" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <lable>Date Of Purchase</lable>
+                <input type="date" class="form-control" id="DateOfPurchase" name="DateOfPurchase" placeholder="Date of purchase" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <lable>Availability Status</lable>
+                <input type="text" class="form-control" id="AvailabilityStatus" name="AvailabilityStatus" placeholder="Availability status" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <lable>Category Id</lable>
+                <input type="number" class="form-control" id="CategoryId" name="CategoryId" placeholder="CategoryId" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <lable>Brand Id</lable>
+                <input type="number" class="form-control" id="BrandId" name="BrandId" placeholder="BrandId" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="Active" name="Active" />
+                <lable class="form-check-label">Active</lable>
+            </div>
+        </div>
+    </div>
+
+
+        <button class="btn btn-primary">Submit</button>
+    <a class="btn btn-danger" href="/products/index">Cancle</a>
+
+</form>
